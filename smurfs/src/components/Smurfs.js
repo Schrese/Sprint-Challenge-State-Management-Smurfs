@@ -2,11 +2,16 @@ import React from 'react';
 
 import Smurf from './Smurf';
 
-const Smurfs = () => {
-    const {}
+const Smurfs = ({items}) => {
+    
     return (
         <div>
-            <Smurf />
+            {items.map(item => (
+                <Smurf key = {item.id} {...item}/>
+            ))}
+            
         </div>
     )
 }
+
+export default Smurfs;

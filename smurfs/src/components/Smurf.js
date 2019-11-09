@@ -1,13 +1,14 @@
 import React, {useContext} from 'react';
-import state from '../contexts/SmurfContext';
+// import state from '../contexts/SmurfContext';
+// import SmurfContext from '../contexts/SmurfContext';
 
-
-function Smurf(state) {
-    console.log(state)
+function Smurf({name, age, height}) {
+    
     return (
-        <div>
-            hello
-            {/* <h2>{state.data.name}</h2> */}
+        <div style = {{background: 'pink'}}>
+            <h2>{name}</h2>
+            <p>age: {age}</p>
+            <p>Height: {height}</p>
         </div>
     )
 }
